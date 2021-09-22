@@ -21,13 +21,24 @@ module cop(
     parameter POS_DELAY = 17'd99974;
     parameter NEG_DELAY = 17'd99974;
     //正负高中低电平触发时间
+    //v1.0电平设计时间
+    /*
     parameter POS_HIG_LEVEL_TIME = 8'd20;
     parameter POS_MED_LEVEL_TIME = 8'd60;
     parameter POS_LOW_LEVEL_TIME = 8'd20;
     parameter NEG_HIG_LEVEL_TIME = 8'd20;
     parameter NEG_MED_LEVEL_TIME = 8'd60;
     parameter NEG_LOW_LEVEL_TIME = 8'd20;
-
+    */
+    //v1.1电平设计时间
+    
+    parameter POS_HIG_LEVEL_TIME = 8'd2;
+    parameter POS_MED_LEVEL_TIME = 8'd6;
+    parameter POS_LOW_LEVEL_TIME = 8'd2;
+    parameter NEG_HIG_LEVEL_TIME = 8'd2;
+    parameter NEG_MED_LEVEL_TIME = 8'd6;
+    parameter NEG_LOW_LEVEL_TIME = 8'd2;
+    
 
 
     //上升下降时间寄存器

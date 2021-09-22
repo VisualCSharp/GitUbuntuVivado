@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Tue Sep 21 23:05:53 2021
+| Date             : Wed Sep 22 22:10:41 2021
 | Host             : szn-thinkpad running 64-bit Ubuntu 16.04.7 LTS
 | Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
 | Design           : main
@@ -36,8 +36,8 @@ Table of Contents
 | Dynamic (W)              | 0.122        |
 | Device Static (W)        | 0.108        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 82.3         |
-| Junction Temperature (C) | 27.7         |
+| Max Ambient (C)          | 82.4         |
+| Junction Temperature (C) | 27.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      234 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       91 |     53200 |            0.17 |
+| Slice Logic    |    <0.001 |      232 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       86 |     53200 |            0.16 |
 |   CARRY4       |    <0.001 |       10 |     13300 |            0.08 |
 |   Register     |    <0.001 |      104 |    106400 |            0.10 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |      163 |       --- |             --- |
+| Signals        |    <0.001 |      162 |       --- |             --- |
 | MMCM           |     0.105 |        1 |         4 |           25.00 |
 | I/O            |     0.015 |       20 |       125 |           16.00 |
 | Static Power   |     0.108 |          |           |                 |
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.010 |       0.003 |      0.008 |
+| Vccint    |       1.000 |     0.010 |       0.002 |      0.008 |
 | Vccaux    |       1.800 |     0.069 |       0.059 |      0.011 |
 | Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -152,7 +152,7 @@ Table of Contents
 | Name            | Power (W) |
 +-----------------+-----------+
 | main            |     0.122 |
-|   u_cop         |     0.002 |
+|   u_cop         |     0.001 |
 |   u_ip_clk_wiz  |     0.106 |
 |     u_clk_wiz_0 |     0.106 |
 |       inst      |     0.106 |
