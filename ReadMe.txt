@@ -15,3 +15,8 @@ Upload the v1.0 of the TEST code.
 It test the ADDA process which outputs the input waves(AD:25MHz, DA:50MHz).
 wave generator Frequency:500kHz Amplitude:5V Resistence:50ohm Type:Sawtooth wave
 P.S. The delay of the Phosphor ZYNQ board with its ADDA board is 235ns.
+
+2021/9/30
+Upload the v1.0 of the AC_SICMOS_Testdidt code.
+It will be the last test of the whole test proess.
+wave generator Frequency:1kHz High voltage:2.662V Low voltage:-2.362V Resistence:50ohm Type:Arbitrary wave Filename:didt.tfw
