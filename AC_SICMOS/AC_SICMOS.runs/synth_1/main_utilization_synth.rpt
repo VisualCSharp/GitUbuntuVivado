@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Sep 22 22:09:48 2021
+| Date         : Wed Sep 29 16:23:39 2021
 | Host         : szn-thinkpad running 64-bit Ubuntu 16.04.7 LTS
 | Command      : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
 | Design       : main
@@ -150,12 +150,12 @@ Table of Contents
 | LUT4     |   31 |                 LUT |
 | LUT6     |   26 |                 LUT |
 | LUT3     |   18 |                 LUT |
-| LUT2     |   16 |                 LUT |
+| LUT2     |   15 |                 LUT |
 | LUT5     |   14 |                 LUT |
 | OBUF     |   10 |                  IO |
 | CARRY4   |   10 |          CarryLogic |
-| LUT1     |    9 |                 LUT |
 | IBUF     |    9 |                  IO |
+| LUT1     |    8 |                 LUT |
 | FDPE     |    7 |        Flop & Latch |
 +----------+------+---------------------+
 

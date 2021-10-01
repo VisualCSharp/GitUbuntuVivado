@@ -18,8 +18,8 @@ module cop(
     parameter NEG_LOW_LEVEL = 8'd169;
 
     //上升下降时间延迟
-    parameter POS_DELAY = 17'd99974;
-    parameter NEG_DELAY = 17'd99974;
+    parameter POS_DELAY = 17'd99977;
+    parameter NEG_DELAY = 17'd99977;
     //正负高中低电平触发时间
     //v1.0电平设计时间
     /*
