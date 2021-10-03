@@ -1,0 +1,404 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Oct  3 22:34:44 2021
+# Process ID: 9100
+# Current directory: /home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.runs/synth_1
+# Command line: vivado -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: /home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.runs/synth_1/main.vds
+# Journal file: /home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9119 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1447.770 ; gain = 83.887 ; free physical = 15551 ; free virtual = 34598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/main.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ip_clk_wiz' [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/ip_clk_wiz.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.runs/synth_1/.Xil/Vivado-9100-szn-thinkpad/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.runs/synth_1/.Xil/Vivado-9100-szn-thinkpad/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ip_clk_wiz' (2#1) [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/ip_clk_wiz.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ad_wave_rec' [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/ad_wave_rec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ad_wave_rec' (3#1) [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/ad_wave_rec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'da_wave_send' [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/da_wave_send.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'da_wave_send' (4#1) [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/da_wave_send.v:1]
+INFO: [Synth 8-6157] synthesizing module 'da_wave_send_10b1' [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/da_wave_send_10b1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'da_wave_send_10b1' (5#1) [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/da_wave_send_10b1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'da_wave_send_10b2' [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/da_wave_send_10b2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'da_wave_send_10b2' (6#1) [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/da_wave_send_10b2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cop' [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/cop.v:1]
+	Parameter IDLE bound to: 5'b00001 
+	Parameter S01 bound to: 5'b00010 
+	Parameter S02 bound to: 5'b00100 
+	Parameter S03 bound to: 5'b01000 
+	Parameter S04 bound to: 5'b10000 
+	Parameter S1_CNT bound to: 6'b000001 
+	Parameter S2_CNT bound to: 6'b000011 
+	Parameter S3_CNT bound to: 6'b000101 
+	Parameter DELAY_CNT bound to: 12'b111110100000 
+	Parameter CYCLE_DELAY_CNT bound to: 18'b100000100011000010 
+	Parameter IDLE_OUT bound to: 5'b00001 
+	Parameter OUT01 bound to: 5'b00010 
+	Parameter OUT02 bound to: 5'b00100 
+	Parameter OUT03 bound to: 5'b01000 
+	Parameter OUT04 bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'cop' (7#1) [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/cop.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'main' (8#1) [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/new/main.v:1]
+WARNING: [Synth 8-3331] design cop has unconnected port ad_data[6]
+WARNING: [Synth 8-3331] design cop has unconnected port ad_data[5]
+WARNING: [Synth 8-3331] design cop has unconnected port ad_data[4]
+WARNING: [Synth 8-3331] design cop has unconnected port ad_data[3]
+WARNING: [Synth 8-3331] design cop has unconnected port ad_data[2]
+WARNING: [Synth 8-3331] design cop has unconnected port ad_data[1]
+WARNING: [Synth 8-3331] design cop has unconnected port ad_data[0]
+WARNING: [Synth 8-3331] design da_wave_send_10b2 has unconnected port sys_rst_n
+WARNING: [Synth 8-3331] design da_wave_send_10b1 has unconnected port sys_rst_n
+WARNING: [Synth 8-3331] design da_wave_send has unconnected port sys_rst_n
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port sys_rst_n
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1494.520 ; gain = 130.637 ; free physical = 15568 ; free virtual = 34612
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1494.520 ; gain = 130.637 ; free physical = 15568 ; free virtual = 34612
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1494.520 ; gain = 130.637 ; free physical = 15568 ; free virtual = 34612
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_ip_clk_wiz/u_clk_wiz_0'
+Finished Parsing XDC File [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_ip_clk_wiz/u_clk_wiz_0'
+Parsing XDC File [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/constrs_1/new/main.xdc]
+Finished Parsing XDC File [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/constrs_1/new/main.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/constrs_1/new/main.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1877.582 ; gain = 0.000 ; free physical = 15293 ; free virtual = 34336
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1877.582 ; gain = 0.000 ; free physical = 15294 ; free virtual = 34337
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1877.582 ; gain = 0.000 ; free physical = 15294 ; free virtual = 34337
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1877.582 ; gain = 0.000 ; free physical = 15294 ; free virtual = 34337
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15372 ; free virtual = 34415
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15372 ; free virtual = 34415
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for u_ip_clk_wiz/u_clk_wiz_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15374 ; free virtual = 34418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_c_reg' in module 'cop'
+INFO: [Synth 8-802] inferred FSM for state register 'state_out_c_reg' in module 'cop'
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_out_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                            00001 |                            00001
+                     S01 |                            00010 |                            00010
+                     S02 |                            00100 |                            00100
+                     S03 |                            01000 |                            01000
+                     S04 |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_c_reg' in module 'cop'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                IDLE_OUT |                            00001 |                            00001
+                   OUT01 |                            00010 |                            00010
+                   OUT02 |                            00100 |                            00100
+                   OUT03 |                            01000 |                            01000
+                   OUT04 |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_out_c_reg' in module 'cop'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15368 ; free virtual = 34412
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 3     
+	   6 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cop 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 3     
+	   6 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "u_cop/p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_cop/p_0_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design main has port da_out_10b1[1] driven by constant 0
+WARNING: [Synth 8-3917] design main has port da_out_10b1[0] driven by constant 0
+WARNING: [Synth 8-3917] design main has port da_out_10b2[1] driven by constant 0
+WARNING: [Synth 8-3917] design main has port da_out_10b2[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'u_cop/da_data_reg[0]' (FDP) to 'u_cop/cop_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_cop/da_data_reg[1]' (FDP) to 'u_cop/cop_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_cop/da_data_reg[2]' (FDP) to 'u_cop/cop_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_cop/da_data_reg[3]' (FDP) to 'u_cop/cop_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_cop/da_data_reg[4]' (FDP) to 'u_cop/cop_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_cop/cop_data_reg[0]' (FDP) to 'u_cop/cop_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_cop/cop_data_reg[1]' (FDP) to 'u_cop/cop_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_cop/cop_data_reg[2]' (FDP) to 'u_cop/cop_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_cop/cop_data_reg[3]' (FDP) to 'u_cop/cop_data_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_cop/cop_data_reg[4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15352 ; free virtual = 34401
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_ip_clk_wiz/u_clk_wiz_0/clk_100m' to pin 'u_ip_clk_wiz/u_clk_wiz_0/bbstub_clk_100m/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_ip_clk_wiz/u_clk_wiz_0/clk_25m' to pin 'u_ip_clk_wiz/u_clk_wiz_0/bbstub_clk_25m/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15229 ; free virtual = 34274
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15221 ; free virtual = 34267
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15221 ; free virtual = 34267
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15221 ; free virtual = 34267
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15221 ; free virtual = 34267
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15221 ; free virtual = 34267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15221 ; free virtual = 34266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15221 ; free virtual = 34266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15220 ; free virtual = 34265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |    28|
+|3     |LUT1      |     2|
+|4     |LUT2      |    46|
+|5     |LUT3      |     9|
+|6     |LUT4      |    39|
+|7     |LUT5      |    23|
+|8     |LUT6      |    18|
+|9     |FDCE      |   137|
+|10    |FDPE      |    18|
+|11    |IBUF      |     9|
+|12    |OBUF      |    32|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------+-----------+------+
+|      |Instance       |Module     |Cells |
++------+---------------+-----------+------+
+|1     |top            |           |   364|
+|2     |  u_cop        |cop        |   319|
+|3     |  u_ip_clk_wiz |ip_clk_wiz |     4|
++------+---------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15220 ; free virtual = 34265
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1877.582 ; gain = 130.637 ; free physical = 15278 ; free virtual = 34323
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1877.582 ; gain = 513.699 ; free physical = 15278 ; free virtual = 34323
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1877.582 ; gain = 0.000 ; free physical = 15220 ; free virtual = 34265
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1877.582 ; gain = 525.266 ; free physical = 15277 ; free virtual = 34323
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1877.582 ; gain = 0.000 ; free physical = 15277 ; free virtual = 34323
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/zenanshi/ZYNQStation/AC_SICMOS_Testdidt/AC_SICMOS_Testdidt.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  3 22:35:08 2021...
