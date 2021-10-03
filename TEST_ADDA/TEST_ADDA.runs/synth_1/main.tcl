@@ -17,7 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-6638-szn-thinkpad/incrSyn
+set_param synth.incrementalSynthesisCache ./.Xil/Vivado-3770-szn-thinkpad/incrSyn
+set_param xicom.use_bs_reader 1
+set_param tcl.collectionResultDisplayLimit 0
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg400-2
@@ -36,6 +38,8 @@ set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   /home/zenanshi/ZYNQStation/TEST_ADDA/TEST_ADDA.srcs/sources_1/new/ad_wave_rec.v
   /home/zenanshi/ZYNQStation/TEST_ADDA/TEST_ADDA.srcs/sources_1/new/da_wave_send.v
+  /home/zenanshi/ZYNQStation/TEST_ADDA/TEST_ADDA.srcs/sources_1/new/da_wave_send_10b1.v
+  /home/zenanshi/ZYNQStation/TEST_ADDA/TEST_ADDA.srcs/sources_1/new/da_wave_send_10b2.v
   /home/zenanshi/ZYNQStation/TEST_ADDA/TEST_ADDA.srcs/sources_1/new/ip_wiz.v
   /home/zenanshi/ZYNQStation/TEST_ADDA/TEST_ADDA.srcs/sources_1/new/main.v
 }
