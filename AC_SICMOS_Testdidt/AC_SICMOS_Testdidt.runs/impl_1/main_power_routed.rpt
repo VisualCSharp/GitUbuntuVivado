@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Sun Oct  3 22:35:52 2021
+| Date             : Mon Oct  4 10:27:48 2021
 | Host             : szn-thinkpad running 64-bit Ubuntu 16.04.7 LTS
 | Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
 | Design           : main
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.259        |
+| Total On-Chip Power (W)  | 0.260        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.151        |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      326 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      118 |     53200 |            0.22 |
-|   CARRY4       |    <0.001 |       28 |     13300 |            0.21 |
-|   Register     |    <0.001 |      155 |    106400 |            0.15 |
-|   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |    <0.001 |      247 |       --- |             --- |
+| Slice Logic    |    <0.001 |      337 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      113 |     53200 |            0.21 |
+|   CARRY4       |    <0.001 |       30 |     13300 |            0.23 |
+|   Register     |    <0.001 |      170 |    106400 |            0.16 |
+|   Others       |     0.000 |        5 |       --- |             --- |
+| Signals        |    <0.001 |      264 |       --- |             --- |
 | MMCM           |     0.105 |        1 |         4 |           25.00 |
 | I/O            |     0.044 |       42 |       125 |           33.60 |
 | Static Power   |     0.108 |          |           |                 |
-| Total          |     0.259 |          |           |                 |
+| Total          |     0.260 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.010 |       0.002 |      0.008 |
+| Vccint    |       1.000 |     0.011 |       0.003 |      0.008 |
 | Vccaux    |       1.800 |     0.071 |       0.060 |      0.011 |
 | Vcco33    |       3.300 |     0.013 |       0.012 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -152,7 +152,7 @@ Table of Contents
 | Name            | Power (W) |
 +-----------------+-----------+
 | main            |     0.151 |
-|   u_cop         |     0.001 |
+|   u_cop         |     0.002 |
 |   u_ip_clk_wiz  |     0.106 |
 |     u_clk_wiz_0 |     0.106 |
 |       inst      |     0.106 |

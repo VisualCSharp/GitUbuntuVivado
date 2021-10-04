@@ -62,14 +62,14 @@ module cop(
 
     
     //第四阶段延迟计数器定义
-    reg             [11:0]  delay_cnt;
+    reg             [17:0]  delay_cnt;
     wire                    add_delay_cnt;
     wire                    end_delay_cnt;
 
 
 
     //延迟计数器延迟计数值
-    parameter DELAY_CNT = 12'd4000;
+    parameter DELAY_CNT = 18'd66666;
 
 
 
@@ -241,14 +241,14 @@ module cop(
     //第四阶段延时S04
     always @(posedge sys_clk or negedge sys_rst_n) begin
         if (!sys_rst_n) begin
-            delay_cnt <= 12'd0;
+            delay_cnt <= 18'd0;
         end
         else if (add_delay_cnt) begin
             if (end_delay_cnt) begin
-                delay_cnt <= 12'd0;
+                delay_cnt <= 18'd0;
             end
             else begin
-                delay_cnt <= delay_cnt + 12'd1;
+                delay_cnt <= delay_cnt + 18'd1;
             end
         end
     end
@@ -631,22 +631,22 @@ module cop(
     //输出
     always @(posedge sys_clk or negedge sys_rst_n) begin
         if (!sys_rst_n) begin
-            da_data <= 8'd127;
-        end
-        else if (state_c == S01) begin
             da_data <= 8'd255;
         end
-        else if (state_c == S02) begin
-            da_data <= 8'd191;
+        else if (state_out_c == S01) begin
+            da_data <= 8'd0;
         end
-        else if (state_c == S03) begin
-            da_data <= 8'd159;
+        else if (state_out_c == S02) begin
+            da_data <= 8'd0;
         end
-        else if (state_c == S04) begin
-            da_data <= 8'd127;
+        else if (state_out_c == S03) begin
+            da_data <= 8'd0;
+        end
+        else if (state_out_c == S04) begin
+            da_data <= 8'd0;
         end
         else
-            da_data <= 8'd127; 
+            da_data <= 8'd255; 
     end
 
     always @(posedge sys_clk or negedge sys_rst_n) begin
@@ -654,13 +654,13 @@ module cop(
             cop_data <= 8'd127;
         end
         else if (state_out_c == S01) begin
-            cop_data <= 8'd255;
+            cop_data <= 8'd0;
         end
         else if (state_out_c == S02) begin
-            cop_data <= 8'd191;
+            cop_data <= 8'd64;
         end
         else if (state_out_c == S03) begin
-            cop_data <= 8'd159;
+            cop_data <= 8'd96;
         end
         else if (state_out_c == S04) begin
             cop_data <= 8'd127;

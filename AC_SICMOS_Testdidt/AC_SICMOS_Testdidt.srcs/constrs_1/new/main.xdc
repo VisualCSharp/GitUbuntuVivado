@@ -78,8 +78,6 @@ set_property PACKAGE_PIN F20 [get_ports {da_out_10b2[0]}]
 
 set_property SLEW SLOW [get_ports ad_clk]
 
-
-
 set_property PACKAGE_PIN B19 [get_ports {ad_data[7]}]
 set_property PACKAGE_PIN B20 [get_ports {ad_data[6]}]
 set_property PACKAGE_PIN C20 [get_ports {ad_data[5]}]
@@ -88,3 +86,14 @@ set_property PACKAGE_PIN P19 [get_ports {ad_data[3]}]
 set_property PACKAGE_PIN R16 [get_ports {ad_data[2]}]
 set_property PACKAGE_PIN N18 [get_ports {ad_data[1]}]
 set_property PACKAGE_PIN R17 [get_ports {ad_data[0]}]
+
+
+
+set_property SLEW SLOW [get_ports {da_out[7]}]
+set_property SLEW SLOW [get_ports {da_out[6]}]
+set_property SLEW SLOW [get_ports {da_out[5]}]
+set_property SLEW SLOW [get_ports {da_out[4]}]
+set_property SLEW SLOW [get_ports {da_out[3]}]
+set_property SLEW SLOW [get_ports {da_out[2]}]
+set_property SLEW SLOW [get_ports {da_out[1]}]
+set_property SLEW SLOW [get_ports {da_out[0]}]
